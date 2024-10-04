@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: system-ui;
+}
+
+
+
+
+
+.container{
+  background-color: #222;
+  box-shadow: 0px 6px 40px 14px rgb(63, 63, 63);
+  border-radius: 2%;
+  padding: 20px 30px;
+}
+
+#add{
+  width: 10%;
+  transition: all 0.5s;
+  background-color: rgb(2, 76, 2);
+  padding: 5px 30px;
+  border-radius: 2%;
+  border: none;
+}
+#add:hover{
+  background-color: green;
+}
+
+#deleteall{
+  margin-left: 10px;
+  transition: all 0.4s;
+  background-color: red;
+  padding: 5px 30px;
+  border-radius: 2%;
+  border: none;
+  letter-spacing: 1px;
+}
+
+#deleteall:hover{
+  background-color: rgb(55, 8, 2);
+}
+
+
+.table .update{
+  background-color: rgb(255, 140, 0);
+  font-weight: 500;
+  transition: all 0.5s;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.table .update:hover{
+  background-color: rgb(171, 50, 5);
+  transform: scale(1.1);
+}
+
+.table .delete{
+  background-color: red;
+  font-weight: 500;
+  transition: all 0.5s;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.table .delete:hover{
+  background-color: rgb(187, 6, 6);
+  transform: scale(1.1);
+}

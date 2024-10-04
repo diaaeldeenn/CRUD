@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CRUDS</title>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center pt-4">CRUDS</h2>
+    <h2 class="text-center">MANAGER SYSTEM</h2>
+
+
+
+    <input type="search" onkeyup="searchData(this.value)" class="form-control w-25" placeholder="Search" id="search">
+    <div class="inputs">
+      <input oninput="regexName()" type="text" placeholder="Product Name" id="productName" class="form-control w-100 my-3">
+      <div class="alert alert-danger d-none" id="nameAlert">You Should Enter Valid (PC-Playstation-Xbox-Laptop)</div>
+      <input oninput="regexPrice()" type="number" placeholder="Price" id="productPrice" class="form-control w-100 my-3">
+      <div class="alert alert-danger d-none" id="priceAlert">You Should Enter Price</div>
+      <input oninput="regexType()" type="text" placeholder="Product Type" id="productType" class="form-control w-100 my-3">
+      <div class="alert alert-danger d-none" id="typeAlert">You Should Enter Valid Type (PC-Laptop-Console-Moblie)</div>
+      <textarea oninput="regexDesc()" id="productDesc" placeholder="Product description" class="w-100 form-control my-3"></textarea>
+      <div class="deletall d-flex">
+        <button class="text-light my-2 mb-3" id="add">ADD</button>
+        <div id="deletall">
+          
+        </div>
+      </div>
+    </div>
+
+    <table class="table text-center">
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>PRICE</th>
+        <th>TYPE</th>
+        <th class="text-uppercase">descreption</th>
+        <th>UPDATE</th>
+        <th>DELETE</th>
+      </tr>
+
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
